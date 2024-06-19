@@ -1,32 +1,48 @@
-.absolute {
-    position: absolute;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
-  
-.absolute.opacity-100 {
-    opacity: 1;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .slide-container {
   position: relative;
   width: 100%;
-  height: 50vh; 
-  overflow: hidden; 
+  height: 50vh;
+  overflow: hidden;
 }
 
 .slide-image {
-  width: 100%; 
-  height: auto; 
-  object-fit: cover; 
-  min-height: 100%; 
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  min-height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .slide-content {
   position: absolute;
-  bottom: 10px; 
-  left: 0;
-  right: 0;
-  text-align: center;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  transition: opacity 0.5s;
+  opacity: 0;
   color: white;
+}
+
+.slide-content.active {
+  opacity: 1;
+}
+
+.visitor-count {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.visitor-count strong {
+  font-size: 2rem;
+  font-weight: bold;
 }

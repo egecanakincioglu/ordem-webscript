@@ -1,16 +1,32 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './components/Home';
-import Login from './components/Login';
-import './index.css'; // Tailwind CSS'i import et
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import UpcomingProjects from './pages/UpcomingProjects';
+import Contact from './pages/Contact';
+import Team from './pages/Team';
+import Header from './components/Header'; 
+import Footer from './components/Footer'; 
+import './style/index.css';
+import Account from './pages/Account';
 
 const App: React.FC = () => {
   return (
     <Router>
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/login" component={Login} />
-      </Switch>
+      <div className="min-h-screen flex flex-col">
+        <Header />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/upcoming-projects" element={<UpcomingProjects />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/account" element={<Account /> }/>
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </Router>
   );
 }
