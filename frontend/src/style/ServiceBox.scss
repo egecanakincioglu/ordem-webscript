@@ -1,0 +1,33 @@
+.service-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .service-image {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 10%;
+    margin-right: 20px; 
+  }
+  
+  .service-content {
+    flex: 1; 
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .service-description {
+    font-size: 1rem;
+    color: #666;
+  }
+  
