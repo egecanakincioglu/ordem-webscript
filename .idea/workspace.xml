@@ -4,25 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c06cc221-2d04-456a-b82f-e9648a0d1602" name="Changes" comment="Database lexer created">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/api/Projects.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/api/Requests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/api/UncomingProjects.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/database/Connection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/database/ast/SelectStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/database/exception/LexerException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/database/exception/ParseException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/database/lexer/Lexer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/database/parser/Parser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/database/parser/ParserTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/database/util/SQLUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/database/util/StringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/database/visitor/SQLExecutionVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/database/visitor/Visitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/ordem-main.sql" afterDir="false" />
+    <list default="true" id="c06cc221-2d04-456a-b82f-e9648a0d1602" name="Changes" comment="SQLExecutionVisitor added to visitor">
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/dto/ErrorDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/handlers/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/model/auth/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/model/auth/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/repository/auth/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/security/JwtRequestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/security/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/services/auth/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../for-smm-panel-v1" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/ordem/api/Accounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/api/general/Accounts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/ordem/api/Projects.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/api/general/Projects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/ordem/api/Requests.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/api/admin/Requests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/ordem/api/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/ordem/api/UncomingProjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/api/general/UncomingProjects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/ordem/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/ordem/database/util/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/database/util/StringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +83,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ordem.services.auth" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/backend" />
       <recent name="$PROJECT_DIR$/backend/docker" />
@@ -149,7 +156,103 @@
       <option name="project" value="LOCAL" />
       <updated>1718887424844</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Requests added to API">
+      <option name="closed" value="true" />
+      <created>1718887448312</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1718887448312</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Projects added to API">
+      <option name="closed" value="true" />
+      <created>1718887460898</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1718887460898</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Database Connection structure">
+      <option name="closed" value="true" />
+      <created>1718887501543</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1718887501543</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Lexer main added">
+      <option name="closed" value="true" />
+      <created>1718887508078</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1718887508078</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Lexer Exception Added">
+      <option name="closed" value="true" />
+      <created>1718887518475</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1718887518475</updated>
+    </task>
+    <task id="LOCAL-00013" summary="UncomingProjects added to API">
+      <option name="closed" value="true" />
+      <created>1718887532506</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1718887532506</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added SQL and String Utils">
+      <option name="closed" value="true" />
+      <created>1718887551519</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1718887551519</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Database visitor created">
+      <option name="closed" value="true" />
+      <created>1718887563572</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1718887563572</updated>
+    </task>
+    <task id="LOCAL-00016" summary="SQL File created">
+      <option name="closed" value="true" />
+      <created>1718887575650</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1718887575650</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Parser system created">
+      <option name="closed" value="true" />
+      <created>1718887588977</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1718887588977</updated>
+    </task>
+    <task id="LOCAL-00018" summary="SelcetStatement added">
+      <option name="closed" value="true" />
+      <created>1718887602786</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1718887602786</updated>
+    </task>
+    <task id="LOCAL-00019" summary="SQLExecutionVisitor added to visitor">
+      <option name="closed" value="true" />
+      <created>1718887640706</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1718887640706</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -161,7 +264,19 @@
     <MESSAGE value="Database automation structure created" />
     <MESSAGE value="File name updated" />
     <MESSAGE value="Database lexer created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Database lexer created" />
+    <MESSAGE value="Requests added to API" />
+    <MESSAGE value="Projects added to API" />
+    <MESSAGE value="Database Connection structure" />
+    <MESSAGE value="Lexer main added" />
+    <MESSAGE value="Lexer Exception Added" />
+    <MESSAGE value="UncomingProjects added to API" />
+    <MESSAGE value="Added SQL and String Utils" />
+    <MESSAGE value="Database visitor created" />
+    <MESSAGE value="SQL File created" />
+    <MESSAGE value="Parser system created" />
+    <MESSAGE value="SelcetStatement added" />
+    <MESSAGE value="SQLExecutionVisitor added to visitor" />
+    <option name="LAST_COMMIT_MESSAGE" value="SQLExecutionVisitor added to visitor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
