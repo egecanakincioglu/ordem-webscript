@@ -2,15 +2,16 @@ package com.ordem.database.util;
 
 public class StringUtils {
     public static boolean isNumeric(String str) {
-        if (str == null) {
-            return false;
-        }
         try {
+            if (str == null) {
+                return false;
+            }
+
             Double.parseDouble(str);
+            return true;
         } catch (NumberFormatException e) {
             return false;
         }
-        return true;
     }
     // Diğer metin işleme metotları
 }
