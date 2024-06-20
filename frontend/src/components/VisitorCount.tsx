@@ -18,4 +18,3 @@ const VisitorCount: React.FC = () => {
 }
 
 export default VisitorCount;
-
