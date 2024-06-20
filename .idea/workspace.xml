@@ -4,8 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c06cc221-2d04-456a-b82f-e9648a0d1602" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../for-smm-panel-v1" beforeDir="false" afterPath="$PROJECT_DIR$/../for-smm-panel-v1" afterDir="false" />
+    <list default="true" id="c06cc221-2d04-456a-b82f-e9648a0d1602" name="Changes" comment="Database lexer created">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/api/Projects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/api/Requests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/api/UncomingProjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/database/Connection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/database/ast/SelectStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/database/exception/LexerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/database/exception/ParseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/database/lexer/Lexer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/database/parser/Parser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/database/parser/ParserTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/database/util/SQLUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/database/util/StringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/database/visitor/SQLExecutionVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/database/visitor/Visitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/ordem-main.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../for-smm-panel-v1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,22 +61,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Core.executor&quot;: &quot;Run&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ege/Documents/GitHub/ordem-webscript&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/ege/Documents/GitHub/ordem-webscript/src/main/java/com/ordem/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Core.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/ege/Documents/GitHub/ordem-webscript",
+    "onboarding.tips.debug.path": "/Users/ege/Documents/GitHub/ordem-webscript/src/main/java/com/ordem/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/backend" />
@@ -75,10 +93,75 @@
       <option name="presentableId" value="Default" />
       <updated>1718717600202</updated>
     </task>
+    <task id="LOCAL-00001" summary="Removed spaces">
+      <option name="closed" value="true" />
+      <created>1718885457366</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718885457366</updated>
+    </task>
+    <task id="LOCAL-00002" summary="API Tested">
+      <option name="closed" value="true" />
+      <created>1718885539593</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718885539593</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added Accounts in API">
+      <option name="closed" value="true" />
+      <created>1718887349382</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718887349382</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Database AST created">
+      <option name="closed" value="true" />
+      <created>1718887371760</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718887371760</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Database automation structure created">
+      <option name="closed" value="true" />
+      <created>1718887394089</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718887394089</updated>
+    </task>
+    <task id="LOCAL-00006" summary="File name updated">
+      <option name="closed" value="true" />
+      <created>1718887403020</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718887403020</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Database lexer created">
+      <option name="closed" value="true" />
+      <created>1718887424844</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1718887424844</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Removed spaces" />
+    <MESSAGE value="API Tested" />
+    <MESSAGE value="Added Accounts in API" />
+    <MESSAGE value="Database AST created" />
+    <MESSAGE value="Database automation structure created" />
+    <MESSAGE value="File name updated" />
+    <MESSAGE value="Database lexer created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Database lexer created" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
