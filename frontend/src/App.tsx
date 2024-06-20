@@ -5,10 +5,10 @@ import Projects from './pages/Projects';
 import UpcomingProjects from './pages/UpcomingProjects';
 import Contact from './pages/Contact';
 import Team from './pages/Team';
-import Header from './components/Header'; 
-import Footer from './components/Footer'; 
-import './style/index.css';
 import Account from './pages/Account';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import './style/index.css';
 
 const App: React.FC = () => {
   return (
@@ -22,7 +22,7 @@ const App: React.FC = () => {
             <Route path="/upcoming-projects" element={<UpcomingProjects />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/team" element={<Team />} />
-            <Route path="/account" element={<Account /> }/>
+            <Route path="/account" element={<Account />} />
           </Routes>
         </main>
         <Footer />
