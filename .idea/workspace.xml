@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c06cc221-2d04-456a-b82f-e9648a0d1602" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../for-smm-panel-v1" beforeDir="false" afterPath="$PROJECT_DIR$/../for-smm-panel-v1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/ordem/Core.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/Core.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
