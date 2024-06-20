@@ -4,29 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c06cc221-2d04-456a-b82f-e9648a0d1602" name="Changes" comment="SQLExecutionVisitor added to visitor">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/dto/ErrorDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/dto/UserDto.java" afterDir="false" />
+    <list default="true" id="c06cc221-2d04-456a-b82f-e9648a0d1602" name="Changes" comment="User role system added">
       <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/handlers/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/model/auth/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/model/auth/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/repository/auth/UserRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/security/JwtRequestFilter.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/security/JwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/services/auth/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/security/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../for-smm-panel-v1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/ordem/api/Accounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/api/general/Accounts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/ordem/api/Projects.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/api/general/Projects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/ordem/api/Requests.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/api/admin/Requests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/ordem/api/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/ordem/api/UncomingProjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/api/general/UncomingProjects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/ordem/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/ordem/database/util/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/database/util/StringUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/ordem/config/SecurityConfig.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,17 +236,115 @@
       <option name="project" value="LOCAL" />
       <updated>1718887640706</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Accounts updated">
+      <option name="closed" value="true" />
+      <created>1718923514190</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1718923514190</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Auth Controller added">
+      <option name="closed" value="true" />
+      <created>1718923524296</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1718923524296</updated>
+    </task>
+    <task id="LOCAL-00022" summary="project variables updated">
+      <option name="closed" value="true" />
+      <created>1718923533050</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1718923533050</updated>
+    </task>
+    <task id="LOCAL-00023" summary="New packages added">
+      <option name="closed" value="true" />
+      <created>1718923541545</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1718923541545</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Removed test">
+      <option name="closed" value="true" />
+      <created>1718923551575</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1718923551575</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Added User Servies">
+      <option name="closed" value="true" />
+      <created>1718923561819</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1718923561819</updated>
+    </task>
+    <task id="LOCAL-00026" summary="New DTO's added">
+      <option name="closed" value="true" />
+      <created>1718923572884</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1718923572884</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Cache Config added">
+      <option name="closed" value="true" />
+      <created>1718923585186</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1718923585186</updated>
+    </task>
+    <task id="LOCAL-00028" summary="API Files updated">
+      <option name="closed" value="true" />
+      <created>1718923595956</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1718923595956</updated>
+    </task>
+    <task id="LOCAL-00029" summary="API Files updated">
+      <option name="closed" value="true" />
+      <created>1718923600974</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1718923600974</updated>
+    </task>
+    <task id="LOCAL-00030" summary="String Utils updated">
+      <option name="closed" value="true" />
+      <created>1718923612153</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1718923612153</updated>
+    </task>
+    <task id="LOCAL-00031" summary="User System Added">
+      <option name="closed" value="true" />
+      <created>1718923620139</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1718923620139</updated>
+    </task>
+    <task id="LOCAL-00032" summary="User role system added">
+      <option name="closed" value="true" />
+      <created>1718923626683</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1718923626683</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Removed spaces" />
-    <MESSAGE value="API Tested" />
-    <MESSAGE value="Added Accounts in API" />
-    <MESSAGE value="Database AST created" />
-    <MESSAGE value="Database automation structure created" />
-    <MESSAGE value="File name updated" />
     <MESSAGE value="Database lexer created" />
     <MESSAGE value="Requests added to API" />
     <MESSAGE value="Projects added to API" />
@@ -276,7 +358,19 @@
     <MESSAGE value="Parser system created" />
     <MESSAGE value="SelcetStatement added" />
     <MESSAGE value="SQLExecutionVisitor added to visitor" />
-    <option name="LAST_COMMIT_MESSAGE" value="SQLExecutionVisitor added to visitor" />
+    <MESSAGE value="Accounts updated" />
+    <MESSAGE value="Auth Controller added" />
+    <MESSAGE value="project variables updated" />
+    <MESSAGE value="New packages added" />
+    <MESSAGE value="Removed test" />
+    <MESSAGE value="Added User Servies" />
+    <MESSAGE value="New DTO's added" />
+    <MESSAGE value="Cache Config added" />
+    <MESSAGE value="API Files updated" />
+    <MESSAGE value="String Utils updated" />
+    <MESSAGE value="User System Added" />
+    <MESSAGE value="User role system added" />
+    <option name="LAST_COMMIT_MESSAGE" value="User role system added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
