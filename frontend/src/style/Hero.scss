@@ -8,9 +8,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff; /* Yazı rengi */
+  color: #fff; 
   text-align: center;
-  z-index: 1; /* Overlay içeriğini video üzerine getir */
+  z-index: 1; 
 }
 
 .overlay h1 {
@@ -22,18 +22,18 @@
 .overlay button {
   font-size: 1.5rem;
   padding: 1rem 2rem;
-  background-color: #1e3a8a; /* Düğme arka plan rengi */
+  background: linear-gradient(90deg, #1e3a8a 0%, #0d265c 100%);
   border: none;
   color: #fff;
   border-radius: 0.5rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.7s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .overlay button:hover {
-  background-color: #0d265c; /* Düğme üzerine gelindiğindeki arka plan rengi */
-}
-
-.hero-container {
-  position: relative;
+  background: linear-gradient(90deg, #0d265c 0%, #1e3a8a 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transition: ease .6s;
 }
