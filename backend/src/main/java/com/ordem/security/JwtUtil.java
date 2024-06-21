@@ -14,7 +14,7 @@ import java.util.function.Function;
 @Service
 public class JwtUtil {
 
-    private final String SECRET_KEY = "secret"; // Replace with your actual secret key
+    private final String SECRET_KEY = "secret"; // web token gelicek buraya
 
     public String extractUsername(String token) {
         return extractClaim(token, Claims::getSubject);
@@ -47,7 +47,7 @@ public class JwtUtil {
                 .setClaims(claims)
                 .setSubject(subject)
                 .setIssuedAt(new Date(System.currentTimeMillis()))
-                .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 60 * 10)) // Token validity 10 hours
+                .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 60 * 10)) // 10 saatlik zaman
                 .signWith(SignatureAlgorithm.HS256, SECRET_KEY)
                 .compact();
     }
