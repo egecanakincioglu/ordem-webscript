@@ -4,13 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c06cc221-2d04-456a-b82f-e9648a0d1602" name="Changes" comment="User role system added">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/handlers/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/security/JwtRequestFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/security/JwtUtil.java" afterDir="false" />
+    <list default="true" id="c06cc221-2d04-456a-b82f-e9648a0d1602" name="Changes" comment="Readme2 removed">
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/config/RabbitConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/config/SwaggerConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/services/MessageService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../for-smm-panel-v1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/ordem/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/ordem/security/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/security/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/style/Hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/style/Hero.scss" afterDir="false" />
+    </list>
+    <list id="a7a144b9-f6b0-4d16-b7d3-93ead5f40982" name="Changes by orkun" comment="">
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/model/Json.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/repository/JsonRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/services/JsonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/ordem/Core.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/ordem/Core.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,12 +37,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -340,14 +358,43 @@
       <option name="project" value="LOCAL" />
       <updated>1718923626683</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Jwt JsonWeb Token added">
+      <option name="closed" value="true" />
+      <created>1718923643854</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1718923643854</updated>
+    </task>
+    <task id="LOCAL-00034" summary="GlobalExceptionHandler added">
+      <option name="closed" value="true" />
+      <created>1718923655596</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1718923655596</updated>
+    </task>
+    <task id="LOCAL-00035" summary="GlobalExceptionHandler added">
+      <option name="closed" value="true" />
+      <created>1718923672165</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1718923672165</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Readme2 removed">
+      <option name="closed" value="true" />
+      <created>1718923770033</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1718923770033</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Database lexer created" />
-    <MESSAGE value="Requests added to API" />
-    <MESSAGE value="Projects added to API" />
     <MESSAGE value="Database Connection structure" />
     <MESSAGE value="Lexer main added" />
     <MESSAGE value="Lexer Exception Added" />
@@ -370,7 +417,10 @@
     <MESSAGE value="String Utils updated" />
     <MESSAGE value="User System Added" />
     <MESSAGE value="User role system added" />
-    <option name="LAST_COMMIT_MESSAGE" value="User role system added" />
+    <MESSAGE value="Jwt JsonWeb Token added" />
+    <MESSAGE value="GlobalExceptionHandler added" />
+    <MESSAGE value="Readme2 removed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Readme2 removed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
