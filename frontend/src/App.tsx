@@ -8,6 +8,7 @@ import Team from './pages/Team';
 import Account from './pages/Account';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import AdminDashboard from './admin/AdminDashboard';
 import './style/index.css';
 
 const App: React.FC = () => {
@@ -23,6 +24,7 @@ const App: React.FC = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/team" element={<Team />} />
             <Route path="/account" element={<Account />} />
+            <Route path="/dashboard" element={<AdminDashboard />} />
           </Routes>
         </main>
         <Footer />
