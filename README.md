@@ -1,2 +1,2 @@
-# ordem-webscript
- Spring Boot Full Stack Web Script
+# ORDEM-Webscript
+✨ Yakın zamanda yeni tasarımıyla yayınlacak
